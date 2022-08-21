@@ -1,23 +1,19 @@
 baseurl: https://ninthpool.github.io
 languageCode: en-us
 theme: hugo-theme-stack
-paginate: 5
+paginate: 4  # how many cards to display in home page
 title: Example Site
 
 languages:
     en:
         languageName: English
-        title: Example Site
+        title: Heming's
         weight: 1
     zh-cn:
         languageName: 中文
-        title: 演示站点
+        # languagedirection: rtl
+        title: 九皋
         weight: 2
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -45,7 +41,7 @@ params:
     favicon:
 
     footer:
-        since: 2020
+        since: 2022
         customText:
 
     dateFormat:
@@ -53,12 +49,12 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        # emoji: 🍥
+        subtitle: " 'And you shall know the truth, and the truth shall make you free.' -- John 8:32"
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/avatar.jpg
 
     article:
         math: false
@@ -70,7 +66,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: remark42
 
         disqusjs:
             shortname:
@@ -85,7 +81,7 @@ params:
             label:
 
         remark42:
-            host:
+            host: https://ninthpool.github.io
             site:
             locale:
 
@@ -146,17 +142,17 @@ params:
             host:
             id:
     widgets:
-        homepage:
-            - type: search
-            - type: archives
-              params:
-                  limit: 5
-            - type: categories
-              params:
-                  limit: 10
-            - type: tag-cloud
-              params:
-                  limit: 10
+        # homepage:
+            # - type: search
+            # - type: archives
+            #   params:
+                #   limit: 5
+            # - type: categories
+            #   params:
+                #   limit: 10
+            # - type: tag-cloud
+            #   params:
+                #   limit: 10
         page:
             - type: toc
 
@@ -196,15 +192,15 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/Ninthpool
           params:
               icon: brand-github
 
         - identifier: twitter
           name: Twitter
-          url: https://twitter.com
+          url: https://cal.berkeley.edu/~hwu
           params:
-              icon: brand-twitter
+            #   icon: brand-twitter
 
 related:
     includeNewer: true
