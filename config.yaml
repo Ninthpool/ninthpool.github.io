@@ -77,13 +77,13 @@ params:
 
         utterances:
             repo:
-            issueTerm: pathname
+            issueTerm:
             label:
 
         remark42:
-            host: https://ninthpool.github.io
-            site:
-            locale:
+            host: 'https://ninthpool.github.io'
+            site_id: 'remark'
+            locale: 'en'
 
         vssue:
             platform:
