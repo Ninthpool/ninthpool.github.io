@@ -66,7 +66,7 @@ params:
 
     comments:
         enabled: true
-        provider: remark42
+        provider: waline
 
         disqusjs:
             shortname:
@@ -81,8 +81,8 @@ params:
             label:
 
         remark42:
-            host: 'https://ninthpool.github.io'
-            site_id: 'remark'
+            host: 'http://127.0.0.1:8080'
+            site: 'remark'
             locale: 'en'
 
         vssue:
@@ -95,8 +95,8 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/component.html
         waline:
-            serverURL:
-            lang:
+            serverURL: https://waline-blog-comment-eight.vercel.app/
+            lang: 'en-US'
             pageview:
             emoji:
                 - https://unpkg.com/@waline/emojis@1.0.1/weibo
@@ -106,7 +106,10 @@ params:
                 - url
             locale:
                 admin: Admin
-                placeholder:
+                nick: Nickname/昵称
+                mail: Eamil/邮箱
+                link: Link/您的链接
+                placeholder: "Email and Link are optional, unless you want to get notified of any replies/ \r\n邮箱和链接不用填, 所以您可以匿名留言 :D"
 
         twikoo:
             envId:
