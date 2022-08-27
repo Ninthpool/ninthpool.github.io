@@ -7,4 +7,4 @@ menu:
             icon: user
 ---
 
-This is a test page.
+没啥好写的, 咱把这里当个留言板吧!
