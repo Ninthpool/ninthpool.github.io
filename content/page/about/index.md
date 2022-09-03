@@ -1,7 +1,7 @@
 ---
 title: About
 # description:
-lastmod: '2020-10-09'
+lastmod: '2022-09-02'
 menu:
     main: 
         weight: -90
@@ -9,4 +9,4 @@ menu:
             icon: user
 ---
 
-"I know that I know nothing"
+"All I know is that I know nothing."
