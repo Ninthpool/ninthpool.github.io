@@ -1,7 +1,7 @@
 baseurl: https://ninthpool.github.io
 languageCode: en-us
 theme: hugo-theme-stack
-paginate: 4  # how many cards to display in home page
+paginate: 3  # how many cards to display in home page
 title: Example Site
 
 languages:
@@ -57,7 +57,7 @@ params:
             src: img/snow.JPG
 
     article:
-        math: false
+        math: true
         toc: true
         readingTime: true
         license:
