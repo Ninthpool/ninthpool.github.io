@@ -199,11 +199,12 @@ menu:
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://cal.berkeley.edu/~hwu
+        - identifier: email
+          name: Email
+        #   url: https://cal.berkeley.edu/~hwu
+          url: hwu0114@gmail.com
           params:
-            #   icon: brand-twitter
+              icon: link
 
 related:
     includeNewer: true
