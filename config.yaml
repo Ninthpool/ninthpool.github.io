@@ -201,8 +201,7 @@ menu:
 
         - identifier: email
           name: Email
-        #   url: https://cal.berkeley.edu/~hwu
-          url: hwu0114@gmail.com
+          url: ./email.html
           params:
               icon: link
 
