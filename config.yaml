@@ -39,7 +39,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:
+    favicon: img/snow.JPG
 
     footer:
         since: 2022
@@ -170,9 +170,9 @@ params:
 
     defaultImage:
         opengraph:
-            enabled: false
-            local: false
-            src:
+            enabled: true
+            local: true
+            src: img/snow.JPG
 
     colorScheme:
         # Display toggle
