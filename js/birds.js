@@ -369,7 +369,6 @@ let windowHalfX = window.innerWidth / 2;
 let windowHalfY = window.innerHeight / 2;
 
 
-
 const BOUNDS = 800, BOUNDS_HALF = BOUNDS / 2;
 
 let last = performance.now();
@@ -560,7 +559,6 @@ function initBirds() {
     birdMesh.rotation.y = Math.PI / 2;
     birdMesh.matrixAutoUpdate = false;
     birdMesh.updateMatrix();
-    console.log(birdMesh)
 
     scene.add( birdMesh );
 
@@ -620,13 +618,21 @@ function onPointerMove( event ) {
 
     if ( event.isPrimary === false ) return;
 
-    mouseX = event.clientX - windowHalfX;
+    mouseX = event.clientX - windowHalfX - 200; // the left side bar is 200 px, so need to recenter
+    
+    // helper documentElement property gives you the html element, while the document.body property gives you the body element.
+    const scrollContainer = () => {
+        return document.documentElement || document.body;
+    };
+    
+    if (scrollContainer().scrollLeft > 200) {
+        // recenter if user scroll to full screen
+        mouseX = event.clientX - windowHalfX
+    }
+
     mouseY = event.clientY - windowHalfY;
 
-
 }
-
-//
 
 function animate() {
 
