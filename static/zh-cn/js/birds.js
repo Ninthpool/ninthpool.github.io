@@ -412,8 +412,8 @@ function init() {
     
     var colorToggle = document.getElementById("dark-mode-toggle")
     colorToggle.addEventListener('click', (e) => {
-        var mode = document.documentElement.dataset.scheme
-        if (mode == 'light') {
+        var mode = localStorage.getItem("StackColorScheme") || document.documentElement.dataset.scheme
+        if (mode == 'light' || mode == 'auto') {
             // sceneColor = 0x5a6f91 // change to blue night
             sceneColor = 0x303030 // change to black night
             scene.background = new THREE.Color( sceneColor );
@@ -613,14 +613,14 @@ function onWindowResize() {
     windowHalfY = window.innerHeight / 2;
 
     
-    // var a = document.getElementsByClassName("main full-width")
-    // var container = a[0]
-    // if (window.innerWidth < 767) {
-    //     // basically don't let user play with the birds when screen size is too small
-    //     container.style.touchAction = "auto";
-    // } else {
-    //     container.style.touchAction = "none"
-    // }
+    var a = document.getElementsByClassName("main full-width")
+    var container = a[0]
+    if (window.innerWidth < 767) {
+        // basically don't let user play with the birds when screen size is too small
+        container.style.touchAction = "auto";
+    } else {
+        container.style.touchAction = "none"
+    }
 
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
