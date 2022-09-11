@@ -440,11 +440,15 @@ function init() {
     // stats = new Stats();
     // container.appendChild( stats.dom );
 
-    container.style.touchAction = 'none';
+
+    if (window.innerWidth < 767) {
+        // basically don't let user play with the birds when screen size is too small
+        container.style.touchAction = "auto";
+    } else {
+        container.style.touchAction = "none"
+    }
+
     container.addEventListener( 'pointermove', onPointerMove );
-
-    //
-
     window.addEventListener( 'resize', onWindowResize );
 
     // const gui = new GUI();
@@ -607,6 +611,16 @@ function onWindowResize() {
 
     windowHalfX = window.innerWidth / 2;
     windowHalfY = window.innerHeight / 2;
+
+    
+    var a = document.getElementsByClassName("main full-width")
+    var container = a[0]
+    if (window.innerWidth < 767) {
+        // basically don't let user play with the birds when screen size is too small
+        container.style.touchAction = "auto";
+    } else {
+        container.style.touchAction = "none"
+    }
 
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
