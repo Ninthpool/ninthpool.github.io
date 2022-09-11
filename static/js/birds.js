@@ -412,7 +412,7 @@ function init() {
     
     var colorToggle = document.getElementById("dark-mode-toggle")
     colorToggle.addEventListener('click', (e) => {
-        var mode = localStorage.getItem("StackColorScheme")
+        var mode = localStorage.getItem("StackColorScheme") || document.documentElement.dataset.scheme
         if (mode == 'light' || mode == 'auto') {
             // sceneColor = 0x5a6f91 // change to blue night
             sceneColor = 0x303030 // change to black night
@@ -620,6 +620,10 @@ function onWindowResize() {
     if (window.innerWidth < 767) {
         // basically don't let user play with the birds when screen size is too small
         container.style.touchAction = "auto";
+
+        var s = document.getElementById("birdjs")
+        document.body.removeChild(s)
+        
     } else {
         container.style.touchAction = "none"
     }
