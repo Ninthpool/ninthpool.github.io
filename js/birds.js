@@ -613,14 +613,14 @@ function onWindowResize() {
     windowHalfY = window.innerHeight / 2;
 
     
-    var a = document.getElementsByClassName("main full-width")
-    var container = a[0]
-    if (window.innerWidth < 767) {
-        // basically don't let user play with the birds when screen size is too small
-        container.style.touchAction = "auto";
-    } else {
-        container.style.touchAction = "none"
-    }
+    // var a = document.getElementsByClassName("main full-width")
+    // var container = a[0]
+    // if (window.innerWidth < 767) {
+    //     // basically don't let user play with the birds when screen size is too small
+    //     container.style.touchAction = "auto";
+    // } else {
+    //     container.style.touchAction = "none"
+    // }
 
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
