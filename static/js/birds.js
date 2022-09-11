@@ -412,16 +412,18 @@ function init() {
     
     var colorToggle = document.getElementById("dark-mode-toggle")
     colorToggle.addEventListener('click', (e) => {
-        var mode = localStorage.getItem("StackColorScheme") || document.documentElement.dataset.scheme
+        var mode = localStorage.getItem("StackColorScheme")
         if (mode == 'light' || mode == 'auto') {
             // sceneColor = 0x5a6f91 // change to blue night
             sceneColor = 0x303030 // change to black night
-            scene.background = new THREE.Color( sceneColor );
+            scene.background = new THREE.Color( sceneColor )
+            localStorage.setItem("StackColorScheme", "dark")
         } else {
             // sceneColor = 0xf5f5fa // change to day
 
             sceneColor = 0xEFF0F1
-            scene.background = new THREE.Color( sceneColor );
+            scene.background = new THREE.Color( sceneColor )
+            localStorage.setItem("StackColorScheme", "light")
         }
     })
     
