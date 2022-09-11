@@ -408,7 +408,7 @@ function init() {
 
     scene.background = new THREE.Color( sceneColor);
 
-    // to add dark mode support
+    // to add dark mode support -- seems like something is wrong with safari on phone
     
     var colorToggle = document.getElementById("dark-mode-toggle")
     colorToggle.addEventListener('click', (e) => {
