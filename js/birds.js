@@ -408,22 +408,21 @@ function init() {
 
     scene.background = new THREE.Color( sceneColor);
 
-    // to add dark mode support
+    // to add dark mode support -- seems like something is wrong with safari on phone
     
     var colorToggle = document.getElementById("dark-mode-toggle")
     colorToggle.addEventListener('click', (e) => {
+        // mode = document.documentElement.dataset.scheme
         var mode = localStorage.getItem("StackColorScheme") || document.documentElement.dataset.scheme
         if (mode == 'light' || mode == 'auto') {
             // sceneColor = 0x5a6f91 // change to blue night
             sceneColor = 0x303030 // change to black night
-            scene.background = new THREE.Color( sceneColor )
-            localStorage.setItem("StackColorScheme", "dark")
+            scene.background = new THREE.Color( sceneColor );
         } else {
             // sceneColor = 0xf5f5fa // change to day
 
             sceneColor = 0xEFF0F1
-            scene.background = new THREE.Color( sceneColor )
-            localStorage.setItem("StackColorScheme", "light")
+            scene.background = new THREE.Color( sceneColor );
         }
     })
     
@@ -446,6 +445,13 @@ function init() {
     if (window.innerWidth < 767) {
         // basically don't let user play with the birds when screen size is too small
         container.style.touchAction = "auto";
+
+        // disable this tag when screen too small
+        var s = document.getElementById("birdjs")
+        document.body.removeChild(s)
+
+
+
     } else {
         container.style.touchAction = "none"
     }
@@ -620,10 +626,6 @@ function onWindowResize() {
     if (window.innerWidth < 767) {
         // basically don't let user play with the birds when screen size is too small
         container.style.touchAction = "auto";
-
-        var s = document.getElementById("birdjs")
-        document.body.removeChild(s)
-        
     } else {
         container.style.touchAction = "none"
     }

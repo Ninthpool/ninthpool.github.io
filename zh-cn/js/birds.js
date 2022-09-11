@@ -418,13 +418,11 @@ function init() {
             // sceneColor = 0x5a6f91 // change to blue night
             sceneColor = 0x303030 // change to black night
             scene.background = new THREE.Color( sceneColor );
-            localStorage.setItem("StackColorScheme", "dark")
         } else {
             // sceneColor = 0xf5f5fa // change to day
 
             sceneColor = 0xEFF0F1
             scene.background = new THREE.Color( sceneColor );
-            localStorage.setItem("StackColorScheme", "light")
         }
     })
     
