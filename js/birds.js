@@ -5,6 +5,9 @@ import * as THREE from 'three';
 
 import { GPUComputationRenderer } from 'https://unpkg.com/three@0.143.0/examples/jsm/misc/GPUComputationRenderer.js';
 
+
+
+
 /* TEXTURE WIDTH FOR SIMULATION */
 const WIDTH = 32;  // could be used as a quick fix for # of birds
 
@@ -407,14 +410,54 @@ function init() {
     }
 
     scene.background = new THREE.Color( sceneColor);
+    console.log(scene.background)
 
     // to add dark mode support -- seems like something is wrong with safari on phone
-    
+
+    var systemPreferScheme
+
+    function dispatchEvent() {
+        const event = new CustomEvent('onColorSchemeChange', {
+            detail: document.documentElement.dataset.scheme
+        });
+        window.dispatchEvent(event);
+    }
+
+    function bindMatchMedia() {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (e.matches) {
+                systemPreferScheme = 'dark';
+            }
+            else {
+                systemPreferScheme = 'light';
+            }
+            setBodyClass();
+        });
+    }
+
+    bindMatchMedia()
+
+
+    function setBodyClass() {
+        if (isDark()) {
+            document.documentElement.dataset.scheme = 'dark';
+        }
+        else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+
+        dispatchEvent(document.documentElement.dataset.scheme);
+    }
+
+    function isDark() {
+        var currentScheme = document.documentElement.dataset.scheme
+        return (currentScheme == 'dark' || currentScheme == 'auto' && systemPreferScheme == 'dark');
+    }
+
+
     var colorToggle = document.getElementById("dark-mode-toggle")
     colorToggle.addEventListener('click', (e) => {
-        // mode = document.documentElement.dataset.scheme
-        var mode = localStorage.getItem("StackColorScheme") || document.documentElement.dataset.scheme
-        if (mode == 'light' || mode == 'auto') {
+        if (!isDark()) {
             // sceneColor = 0x5a6f91 // change to blue night
             sceneColor = 0x303030 // change to black night
             scene.background = new THREE.Color( sceneColor );
@@ -425,8 +468,8 @@ function init() {
             scene.background = new THREE.Color( sceneColor );
         }
     })
-    
-    scene.fog = new THREE.Fog( 0xffffff, 100, 1000 );
+    console.log("just to check")
+    // scene.fog = new THREE.Fog( 0xffffff, 100, 1000 );
 
     // console.log(container)
 
@@ -447,8 +490,8 @@ function init() {
         container.style.touchAction = "auto";
 
         // disable this tag when screen too small
-        var s = document.getElementById("birdjs")
-        document.body.removeChild(s)
+        // var s = document.getElementById("birdjs")
+        // document.body.removeChild(s)
 
 
 
