@@ -413,15 +413,25 @@ function init() {
 
     // to add dark mode support -- seems like something is wrong with safari on phone
 
+    // check if it's the worst navigator that has ever created
+    function is_weixin() {
+        var ua = navigator.userAgent.toLowerCase()
+        if (ua.indexOf('micromessenger') != -1) {
+            return true
+        } else {
+            return false
+        }
+    }
+    
     var colorToggle = document.getElementById("dark-mode-toggle")
-   
+    
     colorToggle.addEventListener('click', (e) => {
         var mode = localStorage.getItem("StackColorScheme")
         if (mode != 'dark') {
             // sceneColor = 0x5a6f91 // change to blue night
             sceneColor = 0x303030 // change to black night
             scene.background = new THREE.Color( sceneColor );
-            if (window.innerWidth < 767) {  
+            if (window.innerWidth < 767 || is_weixin()) {  
                 document.body.style.setProperty('transition', '')  
                 location.reload()
             }
@@ -430,7 +440,7 @@ function init() {
 
             sceneColor = 0xEFF0F1
             scene.background = new THREE.Color( sceneColor );
-            if (window.innerWidth < 767) {    
+            if (window.innerWidth < 767 || is_weixin()) {    
                 document.body.style.setProperty('transition', '')
                 location.reload()
             }
