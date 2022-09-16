@@ -410,54 +410,14 @@ function init() {
     }
 
     scene.background = new THREE.Color( sceneColor);
-    console.log(scene.background)
 
     // to add dark mode support -- seems like something is wrong with safari on phone
 
-    var systemPreferScheme
-
-    function dispatchEvent() {
-        const event = new CustomEvent('onColorSchemeChange', {
-            detail: document.documentElement.dataset.scheme
-        });
-        window.dispatchEvent(event);
-    }
-
-    function bindMatchMedia() {
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-            if (e.matches) {
-                systemPreferScheme = 'dark';
-            }
-            else {
-                systemPreferScheme = 'light';
-            }
-            setBodyClass();
-        });
-    }
-
-    bindMatchMedia()
-
-
-    function setBodyClass() {
-        if (isDark()) {
-            document.documentElement.dataset.scheme = 'dark';
-        }
-        else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-
-        dispatchEvent(document.documentElement.dataset.scheme);
-    }
-
-    function isDark() {
-        var currentScheme = document.documentElement.dataset.scheme
-        return (currentScheme == 'dark' || currentScheme == 'auto' && systemPreferScheme == 'dark');
-    }
-
-
     var colorToggle = document.getElementById("dark-mode-toggle")
+   
     colorToggle.addEventListener('click', (e) => {
-        if (!isDark()) {
+        var mode = localStorage.getItem("StackColorScheme")
+        if (mode != 'dark') {
             // sceneColor = 0x5a6f91 // change to blue night
             sceneColor = 0x303030 // change to black night
             scene.background = new THREE.Color( sceneColor );
@@ -468,7 +428,6 @@ function init() {
             scene.background = new THREE.Color( sceneColor );
         }
     })
-    console.log("just to check")
     // scene.fog = new THREE.Fog( 0xffffff, 100, 1000 );
 
     // console.log(container)
