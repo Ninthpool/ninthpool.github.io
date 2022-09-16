@@ -421,11 +421,19 @@ function init() {
             // sceneColor = 0x5a6f91 // change to blue night
             sceneColor = 0x303030 // change to black night
             scene.background = new THREE.Color( sceneColor );
+            if (window.innerWidth < 767) { 
+                document.body.style.setProperty('transition', '')   
+                location.reload()
+            }
         } else {
             // sceneColor = 0xf5f5fa // change to day
 
             sceneColor = 0xEFF0F1
             scene.background = new THREE.Color( sceneColor );
+            if (window.innerWidth < 767) {    
+                document.body.style.setProperty('transition', '')
+                location.reload()
+            }
         }
     })
     // scene.fog = new THREE.Fog( 0xffffff, 100, 1000 );
