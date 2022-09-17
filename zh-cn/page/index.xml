@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on 九皋</title><link>https://ninthpool.github.io/zh-cn/page/</link><description>Recent content in Pages on 九皋</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ninthpool.github.io/zh-cn/page/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://ninthpool.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</link><pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</guid><description>暂时没啥好写的, 咱把这里当个留言板吧!
-注: 文章可以比较方便地用键盘上的左右箭头进行导览，尽管我相信应该没几个人能有耐心看得完&amp;hellip;
-(是的，本程序员一样热衷于鼓捣完全忽略市场需求的feature 😏)
-鸣谢 This site is built with Hugo, a static site generator. The theme Stack is designed by Jimmy, deployed with some of my modifications. Animation in the home page is powered by three.js.</description></item><item><title>文章</title><link>https://ninthpool.github.io/zh-cn/archives/</link><pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/archives/</guid><description>This is a test page.</description></item><item><title>搜索</title><link>https://ninthpool.github.io/zh-cn/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/search/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on 九皋</title><link>https://ninthpool.github.io/zh-cn/page/</link><description>Recent content in Pages on 九皋</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ninthpool.github.io/zh-cn/page/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://ninthpool.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</link><pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</guid><description>&lt;p>暂时没啥好写的, 咱把这里当个留言板吧!&lt;br>
+&lt;br>
+ &lt;/p>
+&lt;h3 id="关于本站">关于本站&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>文章可以比较方便地用键盘上的左右箭头进行导览，尽管我相信应该没几个人能有耐心看得完..&lt;/p>
+&lt;p>(是的，本程序员一样热衷于鼓捣完全忽略市场需求的feature 😏)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>主页有一个使用 &lt;a class="link" href="https://threejs.org/" target="_blank" rel="noopener"
+>three.js&lt;/a> 制作的互动小动画 （项目发起人是一位自学成才的老哥 &lt;a class="link" href="https://ricardocabello.com/" target="_blank" rel="noopener"
+>Mr.doob&lt;/a> ），但我在手机端关闭了互动功能以免冗杂。 欢迎没事儿来用鼠标赶鸟儿玩!&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>本站使用Hugo制作，这是一个以速度著称的从Markdown生成静态网站的工具。博客主题基于&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
+>Stack&lt;/a>并加上了一些我自作主张的修改，主题原作者是&lt;a class="link" href="https://jimmycai.com/" target="_blank" rel="noopener"
+>Jimmy&lt;/a> &amp;ndash; 致谢!&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>建议不要用微信自带的浏览器进行浏览，这是我 ( respectfully ) 见过最差劲儿又流氓的浏览器了。差劲到什么程度呢? 我得专门写一个函数识别您是否是在使用该浏览器进行浏览，我好以此修bug。流氓到什么程度呢? &lt;p style="color: red;"> 404 not found &lt;/p>&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>文章</title><link>https://ninthpool.github.io/zh-cn/archives/</link><pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/archives/</guid><description>&lt;p>This is a test page.&lt;/p></description></item><item><title>搜索</title><link>https://ninthpool.github.io/zh-cn/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/search/</guid><description/></item></channel></rss>
