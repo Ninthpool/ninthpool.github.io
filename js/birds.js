@@ -430,7 +430,6 @@ function init() {
     colorToggle.addEventListener('click', (e) => {
         var mode = localStorage.getItem("StackColorScheme")
         if (mode != 'dark') {
-            // sceneColor = 0x5a6f91 // change to blue night
             sceneColor = 0x303030 // change to black night
             scene.background = new THREE.Color( sceneColor );
             if (window.innerWidth < 767 || is_weixin()) { 
@@ -438,8 +437,6 @@ function init() {
                 location.reload()
             }
         } else {
-            // sceneColor = 0xf5f5fa // change to day
-
             sceneColor = 0xEFF0F1
             scene.background = new THREE.Color( sceneColor );
             if (window.innerWidth < 767 || is_weixin()) {    

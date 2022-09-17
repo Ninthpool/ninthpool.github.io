@@ -10,14 +10,14 @@
 &lt;li>
 &lt;p>主页有一个使用 &lt;a class="link" href="https://threejs.org/" target="_blank" rel="noopener"
 >three.js&lt;/a> 制作的互动小动画 （项目发起人是一位自学成才的老哥 &lt;a class="link" href="https://ricardocabello.com/" target="_blank" rel="noopener"
->Mr.doob&lt;/a> ），但我在手机端关闭了互动功能以免冗杂。 欢迎没事儿来用鼠标赶鸟儿玩!&lt;/p>
+>Mr.doob&lt;/a> ），但我在手机端关闭了互动功能以免冗杂。 欢迎没事儿来打开暗色模式用鼠标赶鸟儿玩!&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>本站使用Hugo制作，这是一个以速度著称的从Markdown生成静态网站的工具。博客主题基于&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
+&lt;p>本站使用Hugo制作，这是一个以速度见长的从Markdown生成静态网页的工具。博客主题基于&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
 >Stack&lt;/a>并加上了一些我自作主张的修改，主题原作者是&lt;a class="link" href="https://jimmycai.com/" target="_blank" rel="noopener"
 >Jimmy&lt;/a> &amp;ndash; 致谢!&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>建议不要用微信自带的浏览器进行浏览，这是我 ( respectfully ) 见过最差劲儿又流氓的浏览器了。差劲到什么程度呢? 我得专门写一个函数识别您是否是在使用该浏览器进行浏览，我好以此修bug。流氓到什么程度呢? &lt;p style="color: red;"> 404 not found &lt;/p>&lt;/p>
+&lt;p>如果您在电脑端的话，建议不要用微信自带的浏览器进行浏览。这是我 ( respectfully ) 见过最差劲儿又流氓的浏览器了。差劲到什么程度呢? 我得专门写一个函数识别该浏览器并以此修bug。流氓到什么程度呢? &lt;p style="color: red;"> 404 not found &lt;/p>&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>文章</title><link>https://ninthpool.github.io/zh-cn/archives/</link><pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/archives/</guid><description>&lt;p>This is a test page.&lt;/p></description></item><item><title>搜索</title><link>https://ninthpool.github.io/zh-cn/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/search/</guid><description/></item></channel></rss>
