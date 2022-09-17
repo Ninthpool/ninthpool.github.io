@@ -2,7 +2,7 @@
 title: 关于
 date: '2022-08-27'
 lastmod: '2022-09-02'
-toc: false
+toc: true
 menu:
     main: 
         weight: -90
