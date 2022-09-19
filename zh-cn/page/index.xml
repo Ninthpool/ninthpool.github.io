@@ -1,23 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on 九皋</title><link>https://ninthpool.github.io/zh-cn/page/</link><description>Recent content in Pages on 九皋</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ninthpool.github.io/zh-cn/page/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://ninthpool.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</link><pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</guid><description>&lt;p>暂时没啥好写的, 咱把这里当个留言板吧!&lt;br>
-&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on 九皋</title><link>https://ninthpool.github.io/zh-cn/page/</link><description>Recent content in Pages on 九皋</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 02 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ninthpool.github.io/zh-cn/page/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://ninthpool.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</link><pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</guid><description>&lt;h3 id="写在前面">写在前面&lt;/h3>
+&lt;p>写自述于我总是件麻烦的事儿。倒不是因为执着于反抗&amp;quot;标签化&amp;quot;和&amp;quot;被定义&amp;quot; —— 素未谋面亦或再难深交，几个简洁词语的功用毕竟大于留白。只是过去几年在课堂和职场经历了数不清的自我介绍后，要再郑重其事地写下那几个有关专业和职称的单词，漫谈些爱好和理想，最后匆匆隐匿在对方的脑海里成为第一百零一个“那谁谁”， 到如今也实在是有点厌倦了。倒是不如说说建这个博客的目的吧: 因为平时写的东西大多是给机器看，所以现在想写点东西给人看!&lt;/p>
+&lt;p>&lt;br>
  &lt;/p>
 &lt;h3 id="关于本站">关于本站&lt;/h3>
 &lt;ol>
 &lt;li>
-&lt;p>文章可以比较方便地用键盘上的左右箭头进行导览，尽管我相信应该没几个人能有耐心看得完..&lt;/p>
-&lt;p>(是的，本程序员一样热衷于鼓捣完全忽略市场需求的feature 😏)&lt;/p>
+&lt;p>文章可以比较方便地用键盘上的左右箭头进行导览，尽管我相信应该没几个人能有耐心看得完 ——
+咳，既然入了这行怎么能不鼓捣些完全忽略市场需求的feature 😏&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>主页有一个使用 &lt;a class="link" href="https://threejs.org/" target="_blank" rel="noopener"
->three.js&lt;/a> 制作的互动小动画 （项目发起人是一位自学成才的老哥 &lt;a class="link" href="https://ricardocabello.com/" target="_blank" rel="noopener"
->Mr.doob&lt;/a> ），但我在手机端关闭了互动功能以免冗杂。 欢迎没事儿来打开暗色模式用鼠标赶鸟儿玩!&lt;/p>
+&lt;p>主页的小动画是用 &lt;a class="link" href="https://threejs.org/" target="_blank" rel="noopener"
+>three.js&lt;/a> 制作的，这个项目的发起人是一位自学成才的老哥 &lt;a class="link" href="https://ricardocabello.com/" target="_blank" rel="noopener"
+>Mr.doob&lt;/a>。我在屏幕较小的手机端关闭了互动功能以免冗杂，在电脑或者iPad上的时候，欢迎没事儿来打开暗色模式赶鸟儿玩!&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>本站使用Hugo制作，这是一个以速度见长的从Markdown生成静态网页的工具。博客主题基于&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
->Stack&lt;/a>并加上了一些我自作主张的修改，主题原作者是&lt;a class="link" href="https://jimmycai.com/" target="_blank" rel="noopener"
+&lt;p>本站使用Hugo制作，这是一个以速度著称的从Markdown生成静态网站的工具。博客主题基于&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
+>Stack&lt;/a>并加上了一些我自作主张的修改，模板原作者是&lt;a class="link" href="https://jimmycai.com/" target="_blank" rel="noopener"
 >Jimmy&lt;/a> &amp;ndash; 致谢!&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>如果您在电脑端的话，建议不要用微信自带的浏览器进行浏览。这是我 ( respectfully ) 见过最差劲儿又流氓的浏览器了。差劲到什么程度呢? 我得专门写一个函数识别该浏览器并以此修bug。流氓到什么程度呢? &lt;p style="color: red;"> 404 not found &lt;/p>&lt;/p>
+&lt;p>评论区使用的是&lt;a class="link" href="https://waline.js.org/en/" target="_blank" rel="noopener"
+>Waline&lt;/a>，我很喜欢该工具不要求登陆就可以评论的功能，所以还请大家多来和我说说话！如果你也有一个个人主页的话，欢迎填上链接。&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>文章</title><link>https://ninthpool.github.io/zh-cn/archives/</link><pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/archives/</guid><description>&lt;p>This is a test page.&lt;/p></description></item><item><title>搜索</title><link>https://ninthpool.github.io/zh-cn/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/search/</guid><description/></item></channel></rss>
+&lt;li>
+&lt;p>如果您正在电脑端，建议不要用微信自带的浏览器进行浏览。这简直是我 ( respectfully ) 见过最差劲儿又流氓的工具了。差劲到什么程度呢? 我得专门写一个函数识别该浏览器并以此修bug。流氓到什么程度呢?   &lt;span style="color: red;"> 404 not found &lt;/span>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>本站里看到的缩略图基本都来自于 &lt;a class="link" href="http://www.artnet.com/artists/harald-wiberg/3" target="_blank" rel="noopener"
+>Harald Wiberg&lt;/a> 和 &lt;a class="link" href="http://www.artnet.com/artists/carl-brandt/" target="_blank" rel="noopener"
+>Carl Brandt&lt;/a> 两位瑞典画家， 因为我喜欢雪和温顺的野生动物。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>如果您对本站有任何建议或者发现了错误, 还烦请一定告知! 非常感谢!&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;br>
+ &lt;/p>
+&lt;p>&lt;strong>P.S.&lt;/strong> 这儿其实也是个留言板 :D&lt;/p></description></item><item><title>文章</title><link>https://ninthpool.github.io/zh-cn/archives/</link><pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/archives/</guid><description>&lt;p>This is a test page.&lt;/p></description></item><item><title>搜索</title><link>https://ninthpool.github.io/zh-cn/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/search/</guid><description/></item></channel></rss>
