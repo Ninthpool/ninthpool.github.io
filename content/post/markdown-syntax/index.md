@@ -1,6 +1,6 @@
 +++
 author = "Hugo Authors"
-title = "Markdown Syntax Guide"
+title = "Markdown Syntax Guide (placeholder)"
 date = "2022-08-21"
 description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 #tags = [
