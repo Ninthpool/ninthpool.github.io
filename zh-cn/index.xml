@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>九皋</title><link>https://ninthpool.github.io/zh-cn/</link><description>Recent content on 九皋</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 02 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ninthpool.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://ninthpool.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</link><pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</guid><description>&lt;h3 id="写在前面">写在前面&lt;/h3>
-&lt;p>写自述于我总是件麻烦的事儿。倒不是因为执着于反抗&amp;quot;标签化&amp;quot;和&amp;quot;被定义&amp;quot; —— 素未谋面亦或再难深交，几个简洁词语的功用毕竟大于留白。只是过去几年在课堂和职场经历了数不清的自我介绍后，要再郑重其事地写下那几个有关专业和职称的单词，漫谈些爱好和理想，最后匆匆隐匿在对方的脑海里成为第一百零一个“那谁谁”， 到如今也实在是有点厌倦了。倒是不如说说建这个博客的目的吧: 因为平时写的东西大多是给机器看，所以现在想写点东西给人看!&lt;/p>
+&lt;p>    写自述于我总是件麻烦事儿。倒不是因为执着于反抗&amp;quot;标签化&amp;quot;和&amp;quot;被定义&amp;quot; —— 只是过去几年在课堂和职场经历了数不清的自我介绍后，要再煞有介事地写下那几个有关专业和职称的单词，漫谈些爱好理想，最后又匆匆隐匿在对方的脑海里成为第一百零一个“那谁谁”， 到如今也实在有点厌倦这样的无用功了。更何况公司今年青黄不接，四处打杂之下准确介绍自己的工作已是难事。如果你一定要知道我最近在做什么，俺只好摊摊手:   在写bug。&lt;/p>
+&lt;p>    倒是不如来说说这个博客的目的吧！  智能手机时代以来微博微信风卷残云，完整的论述常常因为字数限制而被扯碎得只剩下孤零零的结论。于是异见者闻之侧目，怒气一起评论区冷不防就得多几个看上去怪凶狠的首字母缩写了。 我崇尚文字的精炼简洁，但这似乎早已不是一个允许留白的时代。如今各国社会内外愈发极化，我人微言轻，无力无意改变什么，只是希望能有一个安静地把话说完且不用担心被封号的地方罢了。要是在此基础上能偶尔让人看到对面标签下站着的是个人，且其观点的来由并不如自己所度测的一般离谱，那么交流的目的也就达到了。当然，我会尽量不让此类文章成为这个博客的大多数，毕竟其实一切对政治议题的关心说到底都属于一种迫不得已 —— 无论这种迫不得已来自于良心，共情，或是既得利益。&lt;/p>
+&lt;p>    熟悉我的朋友大概看得出来我废话颇多，故这个博客的另一个目的是充当我记录生活琐事的废纸篓。现代人的写作不光碎片化还格式化，我平时挤出来的东西也要么是给机器看，要么是些十分八股的design doc (设计方案) 和SRS (软件需求说明)，所以但愿这个博客的建立能帮助我重新拾起一些文字的连贯性和创造性吧。另外，我一直固执地相信科技行业里(咳咳，对于我这样的菜鸡来说)十分重要的就是知识共享和经验传递，这样的话后来人也好少走一些咱自己一把血一把泪磕绊过来的弯路 (当然了，我也很不辛地遇见过专喜欢看别人走弯路且引以为乐的人)， 所以一些有关统计/cs/ds以及各类工具相关的分享我会用英文进行写作。如果您对这些不定期更新的小白内容感到好奇，可以在左边的任务栏把语言调成英文。&lt;/p>
+&lt;p>    噢对了，这个博客建于2022年九月，但我上传了一些我许久之前写的作品以作归档。除了最近的三篇外，他们大多是我高中时期效颦的一些现代诗和格律诗。重读起来，他们有些让我觉得稚嫩得好笑，有些又勾起了多年前的回忆以致让我重新审慎起现在的生活&amp;hellip;记忆重重叠叠的像是一座迷宫，打开一扇门后面又是一扇门，而在凌晨两点的当下，我选择把这个校对时间的游戏再往后稍稍推几年。&lt;/p>
 &lt;p>&lt;br>
  &lt;/p>
 &lt;h3 id="关于本站">关于本站&lt;/h3>
@@ -14,7 +17,7 @@
 >Mr.doob&lt;/a>。我在屏幕较小的手机端关闭了互动功能以免冗杂，在电脑或者iPad上的时候，欢迎没事儿来打开暗色模式赶鸟儿玩!&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>本站使用Hugo制作，这是一个以速度著称的从Markdown生成静态网站的工具。博客主题基于&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
+&lt;p>本站使用Hugo框架，这是一个以速度著称的从Markdown生成静态网站的工具。博客主题基于&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
 >Stack&lt;/a>并加上了一些我自作主张的修改，模板原作者是&lt;a class="link" href="https://jimmycai.com/" target="_blank" rel="noopener"
 >Jimmy&lt;/a> &amp;ndash; 致谢!&lt;/p>
 &lt;/li>
@@ -36,7 +39,7 @@
 &lt;/ol>
 &lt;p>&lt;br>
  &lt;/p>
-&lt;p>&lt;strong>P.S.&lt;/strong> 这儿其实也是个留言板 :D&lt;/p></description></item><item><title>文章</title><link>https://ninthpool.github.io/zh-cn/archives/</link><pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/archives/</guid><description>&lt;p>This is a test page.&lt;/p></description></item><item><title>蠧鱼乱丝</title><link>https://ninthpool.github.io/zh-cn/p/%E8%A0%A7%E9%B1%BC%E4%B9%B1%E4%B8%9D/</link><pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/p/%E8%A0%A7%E9%B1%BC%E4%B9%B1%E4%B8%9D/</guid><description>&lt;p>&lt;strong>注:&lt;/strong>     梁任公诗云，&amp;ldquo;笔下高文蠹鱼矢，帐前飞将烂羊头。忍将国难供谈柄，敢与民权有夙仇。&amp;quot;。&lt;/p>
+&lt;p>&lt;strong>P.S.&lt;/strong> 这儿其实也是个留言板 :D&lt;/p></description></item><item><title>文章</title><link>https://ninthpool.github.io/zh-cn/archives/</link><pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/archives/</guid><description>&lt;p>This is a test page.&lt;/p></description></item><item><title>蠧鱼乱丝</title><link>https://ninthpool.github.io/zh-cn/p/%E8%A0%A7%E9%B1%BC%E4%B9%B1%E4%B8%9D/</link><pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate><guid>https://ninthpool.github.io/zh-cn/p/%E8%A0%A7%E9%B1%BC%E4%B9%B1%E4%B8%9D/</guid><description>&lt;p>&lt;strong>注:&lt;/strong>     梁任公诗云，&amp;ldquo;笔下高文蠹鱼矢，帐前飞将烂羊头。忍将国难供谈柄，敢与民权有夙仇。&amp;rdquo; 蠧鱼： 一种bug。&lt;/p>
 &lt;h3 id="感事">【感事】&lt;/h3>
 &lt;p>雅韵高怀音犹在，惊风苦雨尽泉台。&lt;br>
 上书有义还柯梦，业果无由忍谤猜。&lt;br>
