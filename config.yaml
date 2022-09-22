@@ -204,7 +204,7 @@ menu:
           name: Email
           url: ./404.html
           params:
-              icon: link
+              icon: email
 
 related:
     includeNewer: true
