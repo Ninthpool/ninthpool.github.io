@@ -2,6 +2,7 @@
 title: 天空不死
 date: 2012-10-02
 description: 组诗
+draft: true
 ---
 ### （一）预言  
 当思想的洪流冲开世界的挠阻  
