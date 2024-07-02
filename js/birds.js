@@ -368,9 +368,12 @@ class BirdGeometry extends THREE.BufferGeometry {
 let camera, scene, renderer;
 let mouseX = 0, mouseY = 0;
 
+var container = document.getElementsByClassName("main full-width")[0]
+var parentContainer = document.getElementsByClassName("container main-container")[0]
+container.style.height = parentContainer.offsetHeight - 50 + 'px' // set initial height
+
 let windowHalfX = window.innerWidth / 2;
 let windowHalfY = window.innerHeight / 2;
-
 
 
 const BOUNDS = 800, BOUNDS_HALF = BOUNDS / 2;
@@ -389,13 +392,7 @@ animate();
 
 function init() {
 
-    // container = document.createElement( 'div' );
-    // document.body.appendChild( container );
-    var a = document.getElementsByClassName("main full-width")
-    var container = a[0]
-    // container.style.height = "900px" // set initial height
-
-    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 3000 );
+    camera = new THREE.PerspectiveCamera( 75, container.offsetWidth / container.offsetHeight, 1, 3000 );
     camera.position.z = 350;
 
     scene = new THREE.Scene();
@@ -413,7 +410,6 @@ function init() {
 
     // to add dark mode support -- seems like something is wrong with safari on phone
 
-
     // check if it's the worst navigator that has ever created
     function is_weixin() {
         var ua = navigator.userAgent.toLowerCase()
@@ -423,7 +419,6 @@ function init() {
             return false
         }
     }
-
 
     var colorToggle = document.getElementById("dark-mode-toggle")
    
@@ -445,13 +440,12 @@ function init() {
             }
         }
     })
-    // scene.fog = new THREE.Fog( 0xffffff, 100, 1000 );
-
-    // console.log(container)
+    scene.fog = new THREE.Fog( 0xffffff, 100, 1000 );
 
     renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio( window.devicePixelRatio );
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    // renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( container.offsetWidth, container.offsetHeight );
     container.appendChild( renderer.domElement );
 
     initComputeRenderer();
@@ -464,13 +458,9 @@ function init() {
     if (window.innerWidth < 767) {
         // basically don't let user play with the birds when screen size is too small
         container.style.touchAction = "auto";
-
         // disable this tag when screen too small
         // var s = document.getElementById("birdjs")
         // document.body.removeChild(s)
-
-
-
     } else {
         container.style.touchAction = "none"
     }
@@ -480,11 +470,10 @@ function init() {
 
     // const gui = new GUI();
 
-
     const effectController = {
-        separation: 85, //20.0,
-        alignment: 68, //20.0,
-        cohesion: 1.65, //20.0,
+        separation: 30, //20.0,
+        alignment: 30, //20.0,
+        cohesion: 30, //20.0,
         freedom: 10
     };
 
@@ -502,6 +491,7 @@ function init() {
     // gui.add( effectController, 'separation', 0.0, 100.0, 1.0 ).onChange( valuesChanger );
     // gui.add( effectController, 'alignment', 0.0, 100, 0.001 ).onChange( valuesChanger );
     // gui.add( effectController, 'cohesion', 0.0, 100, 0.025 ).onChange( valuesChanger );
+    // gui.add( effectController, 'freedom', 0.0, 100, 0.025 ).onChange( valuesChanger );
     // gui.close();
 
     initBirds();
@@ -636,12 +626,6 @@ function fillVelocityTexture( texture ) {
 
 function onWindowResize() {
 
-    windowHalfX = window.innerWidth / 2;
-    windowHalfY = window.innerHeight / 2;
-
-    
-    var a = document.getElementsByClassName("main full-width")
-    var container = a[0]
     if (window.innerWidth < 767) {
         // basically don't let user play with the birds when screen size is too small
         container.style.touchAction = "auto";
@@ -649,10 +633,9 @@ function onWindowResize() {
         container.style.touchAction = "none"
     }
 
-    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.aspect = container.offsetWidth / container.offsetHeight;
     camera.updateProjectionMatrix();
-
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( container.offsetWidth, container.offsetHeight );
 
 }
 
@@ -667,11 +650,6 @@ function onPointerMove( event ) {
         return document.documentElement || document.body;
     };
     
-    if (scrollContainer().scrollLeft > 200) {
-        // recenter if user scroll to full screen
-        mouseX = event.clientX - windowHalfX
-    }
-
     mouseY = event.clientY - windowHalfY;
 
 
